@@ -1,0 +1,40 @@
+MP\LogistiqueBundle\Entity\Employer:
+    type: entity
+    table: null
+    repositoryClass: MP\LogistiqueBundle\Repository\EmployerRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        employerNom:
+            type: string
+            length: '255'
+            column: employer_nom
+        employerPrenom:
+            type: string
+            length: 255
+            column: employer_prenom
+        employerDateNaissance:
+            type: string
+            length: 255
+            column: employer_date_naissance
+        employerLieuNaissance:
+            type: string
+            length: 255
+            column: employer_lieu_naissance
+        employerCin:
+            type: string
+            length: 255
+            column: employer_cin
+        employerAdresse:
+            type: string
+            length: 255
+            column: employer_adresse
+        employerTelephone:
+            type: string
+            length: 255
+            column: employer_telephone
+    lifecycleCallbacks: {  }

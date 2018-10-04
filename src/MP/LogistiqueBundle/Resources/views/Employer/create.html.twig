@@ -1,0 +1,63 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Logistique-Home{% endblock %}
+
+{% block body %}
+
+    <div class="workplace">
+
+        <div class="page-header">
+            <h1>Forms
+                <small>Stuff</small>
+            </h1>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-12">
+                <div class="head clearfix">
+                    <div class="isw-documents"></div>
+                    <h1>Creation d'un employer</h1>
+                </div>
+                <div class="block-fluid">
+                    {{ form_start(form) }}
+                    <div class="row-form clearfix">
+                        {{ form_label(form.employerNom) }}
+                        {{ form_widget(form.employerNom, {'attr':{'class':'col-md-9'}}) }}
+                    </div>
+                    <div class="row-form clearfix">
+                        {{ form_label(form.employerPrenom) }}
+                        {{ form_widget(form.employerPrenom, {'attr':{'class':'col-md-9'}}) }}
+                    </div>
+                    <div class="row-form clearfix">
+                        {{ form_label(form.employerLieuNaissance) }}
+                        {{ form_widget(form.employerLieuNaissance, {'attr':{'class':'col-md-9'}}) }}
+                    </div>
+                    <div class="row-form clearfix">
+                        {{ form_label(form.employerDateNaissance) }}
+                        {{ form_widget(form.employerDateNaissance, {'attr':{'class':'col-md-9'}}) }}
+                    </div>
+                    <div class="row-form clearfix">
+                        {{ form_label(form.employerCin) }}
+                        {{ form_widget(form.employerCin, {'attr':{'class':'col-md-9'}}) }}
+                    </div>
+                    <div class="row-form clearfix">
+                        {{ form_label(form.employerAdresse) }}
+                        {{ form_widget(form.employerAdresse, {'attr':{'class':'col-md-9'}}) }}
+                    </div>
+                    <div class="row-form clearfix">
+                        {{ form_label(form.employerTelephone) }}
+                        {{ form_widget(form.employerTelephone, {'attr':{'class':'col-md-9'}}) }}
+                    </div>
+                    <div class="footer tar">
+                        {{ form_widget(form.Enregistrer) }}
+                    </div>
+                    {{ form_end(form) }}
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+{% endblock %}

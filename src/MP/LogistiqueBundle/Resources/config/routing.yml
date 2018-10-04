@@ -1,0 +1,7 @@
+#logistique_homepage:
+#    path:     /logistique_homepage
+#    defaults: { _controller: LogistiqueBundle:Default:index }
+
+app:
+    resource: '@LogistiqueBundle/Controller/'
+    type: annotation

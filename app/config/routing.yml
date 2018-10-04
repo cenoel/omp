@@ -1,0 +1,7 @@
+logistique:
+    resource: "@LogistiqueBundle/Resources/config/routing.yml"
+    prefix:   /logistique
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation

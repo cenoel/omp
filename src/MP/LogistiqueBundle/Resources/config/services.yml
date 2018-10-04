@@ -1,0 +1,4 @@
+services:
+    pagination.pages:
+        class: MP\LogistiqueBundle\Service\PaginationListe
+        arguments: ["@doctrine.orm.entity_manager"]
