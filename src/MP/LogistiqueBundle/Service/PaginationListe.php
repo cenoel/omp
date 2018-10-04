@@ -33,6 +33,6 @@ class PaginationListe
 
     public function paginerPages($query)
     {
-        
+
     }
 }

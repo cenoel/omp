@@ -13,7 +13,7 @@ use Symfony\Component\DependencyInjection\Container;
 
 class EmployerController extends Controller
 {
-    const NOMBRE_PAGE = 1;
+    const NOMBRE_PAGE = 20;
 
     /**
      * @Route("/employer_create", name="employer_create")
